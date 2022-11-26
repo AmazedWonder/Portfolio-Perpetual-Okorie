@@ -26,6 +26,8 @@ p {
     font-size: 18px;
     line-height: 1.5;
 }
+
+
 .contact-about-link {
     display: flex;
     margin-top: 40px;
@@ -73,15 +75,42 @@ p {
     text-decoration: none;
 }
 
-/* div:hover {
-    box-shadow: rgb(0 0 0 / 60%) 0px 0px 1rem;
-    background-color: rgba(255, 255, 255, 0.25);
+@media (max-width: 767px) {
+    h1, 
+    h2,
+    h3,
+    p {
+        text-align: center;
+    }
+    .emoji {
+        width: 27px;
+        height: 27px;
+    }
+    #home-img,
+    #home-img1,
+    #home-img2 {
+        display: none;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .mt-5 {
+        text-align: center;
+    }
+    .my-email-link {
+        font-size: 17px;
+    }
+}
+/* @media (min-width: 1200px) {
+    p
 } */
-/* p {
-    background: var(--secondary-color);
-    padding: 20px;
-    border-radius: 4px;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: center;
-} */
+
