@@ -2,39 +2,90 @@
     --primary-color: #6c63ff;
     --secondary-color: #f5f2fe;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    --branding-color: #F9F7FE;
+    --heading-font-family: 'Playfair Display', serif;
+    --default-font-family: 'Poppins', sans-serif;
 }
-
+/* 
+font-family: 'Poppins', sans-serif; */
 body {
-    margin: 100px 0;
+    margin: 0px;
+    font-family: var(--default-font-family);
 }
 
-h1, h2, h3 {
+h1, 
+h2, 
+h3 {
     margin: 0;
 }
 
 h2 {
     font-size: 48px;
+    font-family: var(--heading-font-family);
 }
 h1 {
     font-size: 96px;
+    font-family: var(--heading-font-family);
+    font-weight: bold;
+    color: black;
+    line-height: 128px;
 }
 h3 {
+    font-family: var(--default-font-family);
     font-size: 24px;
+    font-weight: normal;
+    line-height: 36px;
     opacity: 0.7;
 }
 p {
     font-size: 18px;
     line-height: 1.5;
+    font-family: var(--default-font-family);
+    font-weight: normal;
+
 }
 
-
+.intro {
+    background: var(--branding-color);
+    padding: 100px 20px;
+}
+.intro-1 {
+    padding: 100px 20px;
+}
+.intro h2, 
+.intro-1 h2 {
+    font-family: var(--default-font-family);
+    font-weight: bold;
+    font-size: 36px;
+    color: #272142;
+    line-height: 56px;
+}
+.intro li, 
+.intro-1 li {
+    font-family: var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+}
+.intro .navbar-brand, 
+.intro-1 .navbar-brand {
+    font-family: var(--default-font-family);
+    font-size: 25px;
+    font-weight: bold;
+}
+.container {
+    padding: 150px 0px;
+}
 .contact-about-link {
     display: flex;
     margin-top: 40px;
     justify-content: center;
+    font-family: var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
 }
 .contact-about-link a {
     margin: 20px;
+
 }
 
 .primary-link {
@@ -45,6 +96,9 @@ p {
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
     color: white;
+    font-family: var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .primary-link:hover {
