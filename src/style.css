@@ -138,6 +138,26 @@ p {
 .column-space {
     padding: 120px 60px;
 }
+footer .handles {
+    font-size: 40px;
+    font-family: var(--heading-font-family);
+    color: black;
+    line-height: 100px;
+}
+footer .social-links a {
+    margin: 0 20px;
+    color: var(--primary-color);
+    background-color: var(--branding-color);
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
 
 @media (max-width: 767px) {
     h1, 
@@ -197,6 +217,16 @@ p {
         font-size: 14px;
         padding: 21px 15px;
     }
+    footer .handles {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    footer .social-links a {
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    
     }
 @media (min-width: 768px) {
     .column-space {
@@ -206,6 +236,12 @@ p {
     #home-img1,
     #home-img2 {
         padding: 0px 0px;
+    }
+    .container {
+        padding: 49px 0px;
+    }
+    .intro-one {
+        padding: 52px 20px;
     }
 }
 
